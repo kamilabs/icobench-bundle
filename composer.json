@@ -1,0 +1,25 @@
+{
+    "name": "kami/icobench-bundle",
+    "description": "IcoBench API Client Bundle",
+    "type": "symfony-bundle",
+    "require": {
+        "symfony/framework-bundle": "^3.4@dev",
+        "kami/icobench-client": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.4@dev"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Iakov Mishchenko",
+            "email": "iakov@kamilabs.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Kami\\IcoBenchBundle\\": "./"
+        }
+    }
+}
