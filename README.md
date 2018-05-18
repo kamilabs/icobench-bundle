@@ -1,4 +1,4 @@
-# Kami IcoBecnch Bundle
+# Kami IcoBecnch Bundle [![Build Status](https://travis-ci.org/kamilabs/icobench-bundle.svg?branch=master)](https://travis-ci.org/kamilabs/icobench-bundle)
 
 This bundle provides Symfony wrapper for [icobench-client](https://github.com/kamilabs/icobench-client)
 
