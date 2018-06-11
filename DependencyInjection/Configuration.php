@@ -23,7 +23,9 @@ class Configuration implements ConfigurationInterface
         $rootNode->children()
             ->scalarNode('private_key')->isRequired()->end()
             ->scalarNode('public_key')->isRequired()->end()
-            ->arrayNode('guzzle_options')->end()
+            ->arrayNode('guzzle_options')
+                ->scalarPrototype()->end()
+            ->end()
         ;
 
         return $treeBuilder;
