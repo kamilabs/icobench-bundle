@@ -24,7 +24,9 @@ class Configuration implements ConfigurationInterface
             ->scalarNode('private_key')->isRequired()->end()
             ->scalarNode('public_key')->isRequired()->end()
             ->arrayNode('guzzle_options')
-                ->scalarPrototype()->end()
+                ->children()
+                    ->scalarNode('proxy')
+                ->end()
             ->end()
         ;
 
